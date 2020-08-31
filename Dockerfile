@@ -9,7 +9,7 @@ RUN apt-get install -y \
     libgbm-dev
 
 RUN mkdir /node
-RUN cd /node; npm install mermaid@8.5.2 phantomjs-prebuilt@2.1.16 mermaid.cli --unsafe-perm && npm cache clean --force
+RUN cd /node; npm install @mermaid-js/mermaid-cli@8.7.0 --unsafe-perm && npm cache clean --force
 
 COPY files/puppeteer-config.json /
 
